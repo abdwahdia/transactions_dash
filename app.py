@@ -86,6 +86,6 @@ if groupby_col and agg_col:
 with st.expander("Aperçu des données"):
     st.dataframe(df)
 
-# # 7. Téléchargement des données filtrées
-# csv = df.to_csv(index=False)
-# st.download_button("Télécharger les données filtrées", csv, "transactions_filtrées.csv", "text/csv")
+# 7. Téléchargement des données filtrées
+csv = df.to_csv(index=False)
+st.download_button("Télécharger les données filtrées", csv, "transactions_filtrées.csv", "text/csv")
